@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Navbar from './components/Navbar'
+import Welcome from './components/welcome'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Welcome />
+      <footer className='footer'>
+        <h1 className='footer-title'>GARIFUNA CULTURE AND LANGUAGE</h1>
+        <section className='footer-section'>
+          <div>
+            <h1>Randy Vargas</h1>
+            <p>Github</p>
+            <p> LinkedIn</p>
+          </div>
+        </section>
+        <h1 className='footer-copyright'>All rights reserved, app for edu purpoes only</h1>
+      </footer>
+      
     </div>
   );
 }
